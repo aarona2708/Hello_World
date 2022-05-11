@@ -11,5 +11,11 @@ public class Hello {
     public static void main(String[] args) {
         // Prints "Hello World! string"
         System.out.println("Hello World!");
+
+        // initializing a variable. Data type has to be declared (E.g., "int x;")
+        int myFirstNumber = 5;
+        // printing the number
+        System.out.println(myFirstNumber);
+
     }
 }
