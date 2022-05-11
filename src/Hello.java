@@ -9,7 +9,8 @@ public class Hello {
     // main: the main method
     // String[] args: the method takes string class as argument
     public static void main(String[] args) {
-
+        // Prints "Hello World! string"
+        System.out.println("Hello World!");
     }
 
 }
