@@ -9,13 +9,18 @@ public class Hello {
     // main: the main method
     // String[] args: the method takes string class as argument
     public static void main(String[] args) {
-        // Prints "Hello World! string"
+        // Prints "Hello World!" string
         System.out.println("Hello World!");
 
-        // initializing a variable. Data type has to be declared (E.g., "int x;")
+        // Initializing a variable. Data type has to be declared (E.g., "int x;")
         int myFirstNumber = 5;
-        // printing the number
+        // Printing the number. Will print the integer number 5
         System.out.println(myFirstNumber);
+
+        // Performing basic arithmetic
+        int mySecondNumber =  (5+2) * (122 / 2);
+        // Will print integer 427
+        System.out.println(mySecondNumber);
 
     }
 }
