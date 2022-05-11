@@ -18,9 +18,17 @@ public class Hello {
         System.out.println(myFirstNumber);
 
         // Performing basic arithmetic
-        int mySecondNumber =  (5+2) * (122 / 2);
+        int mySecondNumber =  (5 + 2) * (122 / 2);
         // Will print integer 427
         System.out.println(mySecondNumber);
+
+        // Basic arithmetic between int variable
+        int myThirdNumber = 34;
+        int totalNumber = myFirstNumber + mySecondNumber + myThirdNumber;
+        // Will print 398
+        System.out.println(myFirstNumber + mySecondNumber - myThirdNumber);
+        // Will print 466
+        System.out.println(totalNumber);
 
     }
 }
