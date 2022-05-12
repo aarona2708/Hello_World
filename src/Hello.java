@@ -11,6 +11,7 @@ public class Hello {
     public static void main(String[] args) {
 
         /*========================================== Intro and Variables =============================================*/
+        System.out.println("============================ Intro and Variables outputs ============================");
         // Prints "Hello World!" string
         System.out.println("Hello World!");
 
@@ -33,6 +34,7 @@ public class Hello {
         System.out.println(totalNumber);
 
         /*=========================================== Primitive Types ================================================*/
+        System.out.println("\n================================ Primitive Types ================================");
         int myValue = 10000;
 
         // Minimum and maximum memory allocation for an int in
@@ -49,6 +51,7 @@ public class Hello {
         System.out.println("Busted Min value = " + (myMaxIntValue - 1));
 
         /*===================================== Byte, short, long and width ==========================================*/
+        System.out.println("\n========================== Byte, short, long and width ==========================");
         // An int, has a much larger range as we know, and occupies 32 bits, width = 32.
         int myMaxIntTest = 2_147_483_467; // still considered and treated as an int
         System.out.println("myMaxIntTest = " + (myMaxIntTest + 2));
@@ -75,6 +78,7 @@ public class Hello {
         System.out.println("Long Max Value = " + myMaxLongValue);
 
         /*=============================================== Casting ====================================================*/
+        System.out.println("\n=================================== Casting ===================================");
         int myTotal = (myMinIntValue / 2);
 
         // Casting: (type to cast the value to)(value)
@@ -87,6 +91,40 @@ public class Hello {
         short shortVariable = 123;
         int intVariable = 423;
 
-        long longVariable = 5000 + 10 * (byteVariable + shortVariable + intVariable);
+        long longVariable = (5000L + 10 * (byteVariable + shortVariable + intVariable));
+        System.out.println(longVariable);
+
+        // Without the short cast, the value will exceed the bits max
+        short shortTotal = (short) (1000 + 10 * (byteVariable + shortVariable + intVariable));
+        System.out.println(shortTotal);
+
+        /*========================================== Float and double ================================================*/
+        System.out.println("\n============================== Float and double ==============================");
+
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("Float Min Value = " + myMinFloatValue);
+        System.out.println("Float Max Value = " + myMaxFloatValue);
+
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double Min Value = " + myMinDoubleValue);
+        System.out.println("Double Max Value = " + myMaxDoubleValue);
+
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f; // or cast it (float) 5.25. Not casting it will assume that 5.25 is a double
+        double myDoubleValue = 5d / 3d;
+        System.out.println("MyIntValue = " + myIntValue); // ints only prints out whole numbers
+        System.out.println("MyFloatValue = " + myFloatValue); // Float is more concise, prints less values than doubles
+        System.out.println("MyDoubleValue = " + myDoubleValue); // Double is more precise, therefore prints more values
+
+        // Convert given number of lbs to kg using right type. 1 lbs = 0.45359237 kg
+        double lbs = 137d;
+        double kg = lbs * 0.45359237d;
+        System.out.println("\nExample problem: Convert lbs to kg, where 1 lbs = 0.45359237 kg");
+        System.out.println("137 lbs to kg = " + kg);
+
+
+
     }
 }
