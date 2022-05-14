@@ -94,7 +94,7 @@ public class Hello {
         long longVariable = (5000L + 10 * (byteVariable + shortVariable + intVariable));
         System.out.println(longVariable);
 
-        // Without the short cast, the value will exceed the bits max
+        // Without the short cast, the value will exceed the bits max of short if large number is given
         short shortTotal = (short) (1000 + 10 * (byteVariable + shortVariable + intVariable));
         System.out.println(shortTotal);
 
@@ -124,6 +124,8 @@ public class Hello {
         System.out.println("\nExample problem: Convert lbs to kg, where 1 lbs = 0.45359237 kg");
         System.out.println("137 lbs to kg = " + kg);
 
+        /*========================================== Char and Boolean ================================================*/
+        System.out.println("\n============================== Char and Boolean ==============================");
 
 
     }
